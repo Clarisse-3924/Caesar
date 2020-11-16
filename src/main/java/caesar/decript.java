@@ -5,11 +5,11 @@ import static caesar.encript.letter;
 public class decript {
     public static String decrypt(String cipher, int shiftKey)
     {
-        cipherText = cipherText.toLowerCase();
+        cipher = cipher.toLowerCase();
         String text = "";
-        for (int i = 0; i < cipherText.length(); i++)
+        for (int i = 0; i < cipher.length(); i++)
         {
-            int charPosition = letter.indexOf(cipherText.charAt(i));
+            int charPosition = letter.indexOf(cipher.charAt(i));
             int key = (charPosition - shiftKey) % 26;
             if (key < 0)
             {

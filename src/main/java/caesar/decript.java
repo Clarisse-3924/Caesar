@@ -3,7 +3,7 @@ package caesar;
 import static caesar.encript.letter;
 
 public class decript {
-    public static String decrypt(String cipherText, int shiftKey)
+    public static String decrypt(String cipher, int shiftKey)
     {
         cipherText = cipherText.toLowerCase();
         String text = "";

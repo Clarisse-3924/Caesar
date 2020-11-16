@@ -19,4 +19,12 @@ public class encriptTest {
         encript testEncrypt = new encript("clarisse", 3);
         assertEquals(3, testEncrypt.getShiftkey());
     }
+    @Test
+    public void encripttesting() {
+
+        int shiftkey = 1;
+        String text= "clara";
+        String expected = "dmbsb";
+        assertEquals(expected, encript.encrypt( text, shiftkey ));
+    }
 }

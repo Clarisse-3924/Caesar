@@ -9,7 +9,7 @@ public class encriptTest {
 
     @Test
     public void newRectangle_instantiatesCorrectly() {
-        encript testRectangle = new rectangle(2, 4);
+        encript testRectangle = new encript(2, 4);
         assertEquals(true, testRectangle instanceof rectangle);
     }
 }

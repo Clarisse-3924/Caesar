@@ -10,15 +10,15 @@ public class App {
     {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the String for Encryption: ");
-        String message = new String();
-        message = sc.next();
+        String stringmessage = new String();
+        stringmessage = sc.next();
 
         System.out.println("Enter the key: ");
         String key = new String();
         key = sc.next();
         Integer shiftkey = Integer.parseInt(key);
-        System.out.println(encrypt(message,shiftkey));
-        System.out.println(decrypt(encrypt(message,shiftkey), shiftkey));
+        System.out.println(encrypt(stringmessage,shiftkey));
+        System.out.println(decrypt(encrypt(stringmessage,shiftkey), shiftkey));
         sc.close();
     }
 }

@@ -11,12 +11,12 @@ public class encript
         this.shiftkey = shiftkey;
     }
 
-    public int getHeight(){
-        return this.height;
+    public String  getText(){
+        return this.text;
     }
 
-    public int getWidth(){
-        return this.width;
+    public int getShiftkey(){
+        return this.shiftkey;
     }
 
 

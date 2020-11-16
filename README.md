@@ -19,8 +19,11 @@ Information MIT license and Copyright@2020
 
 That is my contact in case you want to contact. Email: cuwizeyimana820@daviscollege.com
 
-## 
+## Encript image
 ![encript](image/encript.png)
+## Decript image
 ![decript](image/decript.png)
+## Encripttest image
 ![encripttest](image/encripttest.png)
+## Out put image
 ![output](image/output.png)

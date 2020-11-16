@@ -8,7 +8,7 @@ public class encriptTest {
     @Test
     public void newEncrypt_instantiatesCorrectly() {
         encript testEncrypt = new encript(2, 4);
-        assertEquals(true, testRectangle instanceof rectangle);
+        assertEquals(true, testEncrypt instanceof encript);
     }
 
     @Test

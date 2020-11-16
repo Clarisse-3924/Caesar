@@ -2,7 +2,8 @@ package caesar;
 import java.util.Scanner;
 
 public class encript
-{ public static final String letter = "abcdefghijklmnopqrstuvwxyz";
+{
+    public static final String letter = "abcdefghijklmnopqrstuvwxyz";
 
     public static String encrypt(String text, int shiftKey)
     {

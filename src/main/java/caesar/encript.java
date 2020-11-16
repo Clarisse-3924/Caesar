@@ -11,9 +11,9 @@ public class encript
         for (int i = 0; i < text.length(); i++)
         {
             int charPosition = letter.indexOf(text.charAt(i));
-            int keyVal = (shiftKey + charPosition) % 26;
-            char replaceVal = letter.charAt(keyVal);
-            cipherText += replaceVal;
+            int key = (shiftKey + charPosition) % 26;
+            char replace = letter.charAt(key);
+            cipherText += replace;
         }
         return cipherText;
     }

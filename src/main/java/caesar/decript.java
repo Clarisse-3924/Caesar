@@ -6,19 +6,19 @@ public class decript {
     public static String decrypt(String cipherText, int shiftKey)
     {
         cipherText = cipherText.toLowerCase();
-        String plainText = "";
+        String text = "";
         for (int i = 0; i < cipherText.length(); i++)
         {
             int charPosition = letter.indexOf(cipherText.charAt(i));
-            int keyVal = (charPosition - shiftKey) % 26;
-            if (keyVal < 0)
+            int key = (charPosition - shiftKey) % 26;
+            if (key < 0)
             {
-                keyVal = letter.length() + keyVal;
+                key = letter.length() + key;
             }
-            char replaceVal = letter.charAt(keyVal);
-            plainText += replaceVal;
+            char replace = letter.charAt(key);
+            text += replace;
         }
-        return plainText;
+        return text;
     }
 
 }

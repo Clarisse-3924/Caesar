@@ -6,8 +6,8 @@ import static junit.framework.TestCase.assertEquals;
 
 public class encriptTest {
     @Test
-    public void newRectangle_instantiatesCorrectly() {
-        encript testRectangle = new encript(2, 4);
+    public void newEncrypt_instantiatesCorrectly() {
+        encript testEncrypt = new encript(2, 4);
         assertEquals(true, testRectangle instanceof rectangle);
     }
 

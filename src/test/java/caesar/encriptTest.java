@@ -7,20 +7,20 @@ import static junit.framework.TestCase.assertEquals;
 public class encriptTest {
     @Test
     public void newEncrypt_instantiatesCorrectly() {
-        encript testEncrypt = new encript("clarisse", 2);
+        encript testEncrypt = new encript("clarisse", 3);
         assertEquals(true, testEncrypt instanceof encript);
     }
 
     @Test
-    public void newRectangle_getsHeight_2() {
-        rectangle testRectangle = new rectangle(2, 4);
-        assertEquals(2, testRectangle.getHeight());
+    public void newEncript_getsText() {
+        encript testEncrypt = new encript("clarisse", 3);
+        assertEquals("clarisse", testEncrypt.getText());
     }
 
     @Test
-    public void getWidth_getsRectangleWidth_4() {
-        rectangle testRectangle = new rectangle(2, 4);
-        assertEquals(4, testRectangle.getWidth());
+    public void getEncript_getsShiftkey() {
+        encript testEncrypt = new encript("clarisse", 3);
+        assertEquals(3, testEncrypt.getShiftkey());
     }
 
 }

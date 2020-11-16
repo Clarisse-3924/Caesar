@@ -2,19 +2,17 @@ package caesar;
 import java.util.Scanner;
 
 public class encript
-{
+{ public static final String letter = "abcdefghijklmnopqrstuvwxyz";
 
-    public static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
-
-    public static String encrypt(String plainText, int shiftKey)
+    public static String encrypt(String text, int shiftKey)
     {
-        plainText = plainText.toLowerCase();
+        text = text.toLowerCase();
         String cipherText = "";
-        for (int i = 0; i < plainText.length(); i++)
+        for (int i = 0; i < text.length(); i++)
         {
-            int charPosition = ALPHABET.indexOf(plainText.charAt(i));
+            int charPosition = letter.indexOf(text.charAt(i));
             int keyVal = (shiftKey + charPosition) % 26;
-            char replaceVal = ALPHABET.charAt(keyVal);
+            char replaceVal = letter.charAt(keyVal);
             cipherText += replaceVal;
         }
         return cipherText;

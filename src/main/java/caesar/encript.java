@@ -1,16 +1,11 @@
 package caesar;
-import java.util.Scanner;
-
 public class encript
-{
-    private String text;
+{ private String text;
     private int shiftkey;
-
     public encript(String text, int shiftkey) {
         this.text = text;
         this.shiftkey = shiftkey;
     }
-
     public String  getText(){
         return this.text;
     }
@@ -18,8 +13,6 @@ public class encript
     public int getShiftkey(){
         return this.shiftkey;
     }
-
-
 
     public static final String letter = "abcdefghijklmnopqrstuvwxyz";
 
@@ -36,8 +29,6 @@ public class encript
         }
         return cipherText;
     }
-
-
 
 }
 

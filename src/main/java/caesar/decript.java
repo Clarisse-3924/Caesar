@@ -1,11 +1,8 @@
 package caesar;
-
 import static caesar.encript.letter;
-
 public class decript {
     public static String decrypt(String cipher, int shiftKey)
-    {
-        cipher = cipher.toLowerCase();
+    { cipher = cipher.toLowerCase();
         String text = "";
         for (int i = 0; i < cipher.length(); i++)
         {

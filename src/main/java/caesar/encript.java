@@ -3,6 +3,24 @@ import java.util.Scanner;
 
 public class encript
 {
+    private String text;
+    private int shiftkey;
+
+    public encript(String text, int shiftkey) {
+        this.text = text;
+        this.shiftkey = shiftkey;
+    }
+
+    public int getHeight(){
+        return this.height;
+    }
+
+    public int getWidth(){
+        return this.width;
+    }
+
+
+
     public static final String letter = "abcdefghijklmnopqrstuvwxyz";
 
     public static String encrypt(String text, int shiftKey)
